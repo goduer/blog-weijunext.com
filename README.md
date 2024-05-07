@@ -1,11 +1,10 @@
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
 
 
-# [J Blog](https://weijunext.com/)
+# [J Blog / J 实验室](https://weijunext.com/)
 
-**Blog Address**：https://weijunext.com  
-**Blog Name**：J Blog  
-**Main Content**: Summaries of experiences and technical sharing on Next.js/React
+**Blog Address**: https://weijunext.com  
+**Main Content**: Summaries of experiences and technical sharing on Next.js/React / Next.js/React 经验总结与技术分享
 
 ## About Me
 
