@@ -3,8 +3,8 @@
 
 # [J Blog](https://weijunext.com/)
 
-**Blog Address**：https://weijunext.com
-**Blog Name**：J Blog
+**Blog Address**：https://weijunext.com  
+**Blog Name**：J Blog  
 **Main Content**: Summaries of experiences and technical sharing on Next.js/React
 
 ## About Me
