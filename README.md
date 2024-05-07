@@ -1,55 +1,11 @@
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
 
 
-# [Weekly Boilerplate](https://weekly.weijunext.com/)
+# [J Blog](https://weijunext.com/)
 
-Weekly Boilerplate is a carefully designed **weekly newsletter website** template, aimed at providing a one-click startup solution for weekly newsletter businesses for both technical and non-technical users.
-
-Demo address：https://weekly.weijunext.com
-
-Blog: [Next.js+MDX手撸周刊/博客网站](https://juejin.cn/post/7355845238907486271)
-
-## Tech Stack 
-
-Weekly Boilerplate is built on the following tech stack:
-
-- Next.js – Frontend
-- MDX - Content writing
-- TailwindCSS – Styling
-- Shadcn, NextUI – UI
-- Giscus – Comment plugin
-- Google Analytics - Analytics([How to use?](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d))
-- Vercel - Hosting
-
-
-## Running Locally
-
-After cloning the repo, you need to copy the `.env.example` file to create a `.env` file and fill in the required fields.
-
-Then, run the application in the command line and it will be available at `http://localhost:3000`.
-
-```bash
-npm run dev
-```
-
-
-## One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/weekly-boilerplate&project-name=&repository-name=weekly-boilerplate&demo-title=weekly-boilerplate&demo-description=Weekly%20Boilerplate.&demo-url=https://weekly.weijunext.com)
-
-
-## TODO List
-
-- [x] SSG rendering for weekly/blog
-- [x] Article indexing
-- [x] Comment functionality
-- [x] Search functionality (partial)
-- [ ] Clicking on search results should navigate and scroll to the selected position
-- [ ] Display only one line for each search result item
-
-
+**Blog Address**：https://weijunext.com
+**Blog Name**：J Blog
+**Main Content**: Summaries of experiences and technical sharing on Next.js/React
 
 ## About Me
 
