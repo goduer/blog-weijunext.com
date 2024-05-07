@@ -1,4 +1,4 @@
-import { WeeklyPost } from "@/types/weekly";
+import { BlogPost } from "@/types/post";
 import dayjs from "dayjs";
 import Link from "next/link";
 
@@ -7,7 +7,7 @@ export default async function WeeklyList({
   posts,
 }: {
   isSide?: boolean;
-  posts: WeeklyPost[];
+  posts: BlogPost[];
 }) {
   return (
     <ul className="flex flex-col gap-4">
@@ -25,7 +25,7 @@ export default async function WeeklyList({
             </span>
           )}
           <Link
-            href={`/weekly/${post.metadata.slug}`}
+            href={`/article/${post.metadata.slug}`}
             className="link-default truncate transition-colors duration-500 ease-in-out"
           >
             {post.metadata.title}

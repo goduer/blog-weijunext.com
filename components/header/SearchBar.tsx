@@ -3,14 +3,14 @@ import { Input } from "@/components/ui/input";
 import { createIndex } from "@/lib/loadIndex";
 import { doSearch } from "@/lib/search";
 import { cn } from "@/lib/utils";
+import { BlogPost } from "@/types/post";
 import { SearchResult } from "@/types/search";
-import { WeeklyPost } from "@/types/weekly";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import { HighlightMatches } from "./HighlightMatches";
 
-const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
+const SearchBar = ({ posts }: { posts: BlogPost[] }) => {
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
   const [show, setShow] = useState(false);
@@ -116,7 +116,7 @@ const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
               <Link
                 key={`${result.id}_${index}`}
                 // get the right url
-                href={`/weekly/${result.id.split("_")[0]}`}
+                href={`/article/${result.id.split("_")[0]}`}
                 onClick={finishSearch}
               >
                 <li

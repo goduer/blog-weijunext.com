@@ -1,5 +1,5 @@
 import { stripMarkdown } from "@/lib/search";
-import { WeeklyPost } from "@/types/weekly";
+import { BlogPost } from "@/types/post";
 import FlexSearch from 'flexsearch';
 
 // 创建一个 FlexSearch 文档索引
@@ -39,7 +39,7 @@ let pageId = 0;
  * 创建索引并将其导出为 JSON 文件
  * Create the index and export it as JSON files
  */
-export const createIndex = async ({ documents }: { documents: WeeklyPost[] }) => {
+export const createIndex = async ({ documents }: { documents: BlogPost[] }) => {
   let pageContent = "";
   ++pageId;
 

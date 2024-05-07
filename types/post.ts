@@ -1,5 +1,5 @@
 
-export type WeeklyPost = {
+export type BlogPost = {
   id?: string
   slug?: string
   title?: string
@@ -10,5 +10,5 @@ export type WeeklyPost = {
 }
 
 export type PostsByMonth = {
-  [key: string]: WeeklyPost[];
+  [key: string]: BlogPost[];
 }

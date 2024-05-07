@@ -5,10 +5,10 @@ import Header from "@/components/header/Header";
 import { TailwindIndicator } from "@/components/theme/TailwindIndicator";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { siteConfig } from "@/config/site";
-import { getWeeklyPosts } from "@/lib/weekly";
+import { getPosts } from "@/lib/post";
 import "@/styles/globals.css";
 import "@/styles/loading.css";
-import { PostsByMonth, WeeklyPost } from "@/types/weekly";
+import { BlogPost, PostsByMonth } from "@/types/post";
 import { Analytics } from "@vercel/analytics/react";
 import { Viewport } from "next";
 
@@ -26,8 +26,8 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { posts }: { posts: WeeklyPost[]; postsByMonth: PostsByMonth } =
-    await getWeeklyPosts();
+  const { posts }: { posts: BlogPost[]; postsByMonth: PostsByMonth } =
+    await getPosts();
 
   return (
     <html lang="en" suppressHydrationWarning>

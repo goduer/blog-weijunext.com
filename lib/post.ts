@@ -1,10 +1,10 @@
-import { PostsByMonth, WeeklyPost } from '@/types/weekly';
+import { BlogPost, PostsByMonth } from '@/types/post';
 import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
 
-export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMonth: PostsByMonth }> {
+export async function getPosts(): Promise<{ posts: BlogPost[]; postsByMonth: PostsByMonth }> {
   const postsDirectory = path.join(process.cwd(), 'content')
   let filenames = await fs.promises.readdir(postsDirectory)
   filenames = filenames.reverse()
@@ -28,7 +28,7 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
   )
 
   // Group by month
-  const postsByMonth: PostsByMonth = posts.reduce((acc: PostsByMonth, post: WeeklyPost) => {
+  const postsByMonth: PostsByMonth = posts.reduce((acc: PostsByMonth, post: BlogPost) => {
     const month = dayjs(post.metadata.date).format('YYYY-MM-DD').slice(0, 7);
     if (!acc[month]) {
       acc[month] = [];
